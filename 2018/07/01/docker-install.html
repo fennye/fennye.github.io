@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="fenny">
 <meta property="og:description" content="官网安装入口 本文是在centos7上安装docker点击进入docker官网安装教程  卸载旧版本12345678910sudo yum remove docker \                  docker-client \                  docker-client-latest \                  docker-common \">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-07-01T11:19:40.000Z">
+<meta property="og:updated_time" content="2018-07-01T12:07:11.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="docker install">
 <meta name="twitter:description" content="官网安装入口 本文是在centos7上安装docker点击进入docker官网安装教程  卸载旧版本12345678910sudo yum remove docker \                  docker-client \                  docker-client-latest \                  docker-common \">
@@ -315,8 +315,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/环境/" itemprop="url" rel="index">
-                    <span itemprop="name">环境</span>
+                  <a href="/categories/linux/" itemprop="url" rel="index">
+                    <span itemprop="name">linux</span>
                   </a>
                 </span>
 
@@ -359,6 +359,9 @@
 <h3 id="安装Docker-CE"><a href="#安装Docker-CE" class="headerlink" title="安装Docker CE"></a>安装Docker CE</h3><ol>
 <li><p>安装</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo yum install docker-ce</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>镜像加速</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">vi /etc/docker/daemon.json</span><br><span class="line">&#123;</span><br><span class="line">  &quot;registry-mirrors&quot;: [&quot;http://hub-mirror.c.163.com&quot;]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>自动启动</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo systemctl start docker</span><br></pre></td></tr></table></figure>
@@ -481,7 +484,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
